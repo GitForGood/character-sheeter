@@ -1,0 +1,373 @@
+/* Main App Styles */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  /* Section Styles */
+  .section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+  }
+  
+  .subsection {
+    margin-top: 16px;
+  }
+  
+  .subsection-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #444;
+  }
+  
+  /* Upload Section */
+  .upload-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .upload-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .characteristics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .characteristic {
+    margin-bottom: 12px;
+  }
+  
+  .characteristic-title {
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  
+  .characteristic-text {
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  .proficiency-item {
+    margin-bottom: 8px;
+  }
+  
+  /* Equipment */
+  .currency-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  @media (min-width: 768px) {
+    .currency-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  .currency-item {
+    font-size: 16px;
+  }
+  
+  /* Tables */
+  .table-container {
+    overflow-x: auto;
+    margin-top: 12px;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .data-table th {
+    text-align: left;
+    padding: 10px 16px;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ddd;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .data-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .data-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Spellcasting */
+  .spellcasting-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .spellcasting-stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .spell-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  
+  @media (min-width: 768px) {
+    .spell-slots-grid {
+      grid-template-columns: repeat(9, 1fr);
+    }
+  }
+  
+  .spell-slot {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  .spell-slot-level {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .spell-slot-count {
+    margin-top: 4px;
+  }
+  
+  .spell-level-group {
+    margin-bottom: 20px;
+  }
+  
+  .spell-level-title {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .upload-controls {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .file-input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  .export-button {
+    padding: 8px 16px;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .export-button:hover {
+    background-color: #3a5b8a;
+  }
+  
+  .export-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    margin-top: 12px;
+    padding: 12px;
+    background-color: #ffebee;
+    color: #c62828;
+    border-radius: 4px;
+  }
+  
+  .empty-state {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    text-align: center;
+  }
+  
+  .empty-state p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Info Grid Styles */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .info-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .info-item {
+    margin-bottom: 4px;
+  }
+  
+  .info-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 4px;
+  }
+  
+  .info-value {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  /* Ability Scores */
+  .abilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .abilities-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .abilities-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  .ability-box {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .ability-name {
+    font-weight: 500;
+    margin: 0 0 8px 0;
+  }
+  
+  .ability-score {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 4px 0;
+  }
+  
+  .ability-mod {
+    font-size: 18px;
+    margin: 4px 0;
+  }
+  
+  .saving-throw {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  .save-label {
+    font-weight: 500;
+  }
+  
+  /* Race, Class, Background */
+  .label {
+    font-weight: 500;
+  }
+  
+  .race-info, .class-info {
+    margin-bottom: 16px;
+  }
+  
+  .race-name, .class-name, .background-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .traits-list, .features-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 8px;
+  }
+  
+  .trait-item, .feature-item {
+    margin-bottom: 8px;
+  }
+  
+  .trait-name, .feature-name {
+    font-weight: 500;
+  }
+  
+  .characteristics-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  
